@@ -17,7 +17,7 @@ public class Gerente extends Funcionario{
     }
 
     public String NomeProjeto(){
-        return projeto;
+        return ("Projeto: "+ projeto);
     }
 
 
