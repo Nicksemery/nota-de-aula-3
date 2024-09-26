@@ -42,7 +42,7 @@ public class Funcionario {
     }
 
     public int CalcularIdade() {
-        return nasc - 2024;
+        return 2024 - nasc;
     }
 
     public void destalhes() {
