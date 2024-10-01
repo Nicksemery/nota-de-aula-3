@@ -3,10 +3,16 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[]args){
 
-        Animal a1 = new Animal("Bob", "Cachorro");
-        Animal a2 = new Animal("Mial","Gato");
+        Cachorro c = new Cachorro("Bob","Cachorro");
+        Gato g = new Gato("Parry","Gato");
 
-        System.out.println("");
+        c.apresentacao();
+        c.late();
+        c.caminha();
+        g.apresentacao();
+        g.mia();
+        g.mfim();
+
 
     }
 }

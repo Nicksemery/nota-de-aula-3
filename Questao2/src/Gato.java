@@ -1,13 +1,19 @@
 public class Gato extends Animal{
-    private String miar;
 
     public Gato(){}
-    public Gato(String miar, String nome, String raça){
+    public Gato(String nome, String raça){
         super(nome, raça);
-        this.miar = miar;
     }
 
-    public void mia (String miar){
-        miar = ("o gato quer comer e começou a miar alto" + miar);
+    public void apresentacao(){
+        System.out.println("Meu "+ getRaça() + " se chama "+ getNome());
+    }
+
+    public void mia (){
+        System.out.println("o gato quer comer e começou a miou alto");
+    }
+
+    public void mfim(){
+        caminha();
     }
 }

@@ -9,7 +9,20 @@ public class Animal {
         this.raça = raça;
     }
 
-    public void caminha (String caminha){
-        caminha = ("o animal" + raça + "esta caminhando");
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getNome(){
+        return nome;
+    }
+    public void setRaça(String raça){
+        this.raça = raça;
+    }
+    public String getRaça(){
+        return raça;
+    }
+
+    public void caminha (){
+        System.out.println("O " + raça + " esta caminhando para longe");
     }
 }

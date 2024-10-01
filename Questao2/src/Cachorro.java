@@ -1,16 +1,18 @@
 public class Cachorro extends Animal{
 
-    private String latir;
-
     public Cachorro(){}
-    public Cachorro(String latir, String nome, String raça){
-        super(nome, raça);
-        this.latir = latir;
+    public Cachorro(String nome, String raça){
+        super(nome,raça);
     }
 
-    public void late(String late){
-        late = ("o cachorro viu um esquiloe comecou a latir " + latir);
+    public void apresentacao (){
+        System.out.println("Meu "+ getRaça() + " se chama "+ getNome());
+    }
+    public void late(){
+        System.out.println("Ele latiu em resposta.");
     }
 
-
+    public void fim(){
+        caminha();
+    }
 }
